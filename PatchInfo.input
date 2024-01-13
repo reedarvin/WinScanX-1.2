@@ -1,0 +1,11 @@
+# MS17-010 - https://support.microsoft.com/en-us/help/4023262/how-to-verify-that-ms17-010-is-installed
+
+5:1:2600:MS17-010:\ADMIN$\system32\drivers\srv.sys:5:1:2600:7208
+5:2:3790:MS17-010:\ADMIN$\system32\drivers\srv.sys:5:2:3790:6021
+6:0:6002:MS17-010:\ADMIN$\system32\drivers\srv.sys:6:0:6002:19743
+6.1:7601:MS17-010:\ADMIN$\system32\drivers\srv.sys:6:1:7601:23689
+6:2:9200:MS17-010:\ADMIN$\system32\drivers\srv.sys:6:2:9200:22099
+6:3:9600:MS17-010:\ADMIN$\system32\drivers\srv.sys:6:3:9600:18604
+10:0:10240:MS17-010:\ADMIN$\system32\drivers\srv.sys:10:0:10240:17319
+10:0:10586:MS17-010:\ADMIN$\system32\drivers\srv.sys:10:0:10586:839
+10:0:14393:MS17-010:\ADMIN$\system32\drivers\srv.sys:10:0:14393:953
